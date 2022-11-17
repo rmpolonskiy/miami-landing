@@ -21,7 +21,7 @@
     <header class="page__section header">
       <div class="container">
         <div class="header__content">
-          <div class="top-actions">
+          <div class="header__top">
             <a
               href="#menu"
               class="icon icon--menu"
@@ -40,6 +40,9 @@
               href="tel:+1 234 555-55-55"
               class="icon icon--phone header__call"
               >
+              <div class="icon__tooltip">
+                +1 234 555-55-55
+              </div>
             </a>
           </div>
 
@@ -55,7 +58,7 @@
     <nav class="page__menu menu" id="menu">
       <div class="container">
         <div class="menu__content">
-          <div class="menu__top top-actions">
+          <div class="menu__top">
             <a
               href="#"
               class="icon icon--cross"
@@ -109,16 +112,15 @@
     <main>
       <section class="page__section about" id="about-us">
         <div class="container">
-          <div class="grid grid--desktop">
-            <div class="grid__item grid__item--1-4">
-              <h2 class="about__title">
-                Miami best
-                <br>
-                Real estate
-                <a href="#" class="about__title-link">here</a>
-              </h2>
-            </div>
-            <div class="grid__item grid__item--7-12">
+          <div class="about__content">
+            <h2 class="about__title">
+              Miami best
+              <br>
+              Real estate
+              <a href="#" class="about__title-link">here</a>
+            </h2>
+
+            <div class="about__description">
               <a href="#" class="about__subtitle">
                 Over 50 years experience in love.
               </a>
@@ -253,7 +255,7 @@
           </div>
 
           <div class="grid grid--desktop">
-            <div class="grid__item grid__item--6-7">
+            <div class="grid__item grid__item--desktop-6-7">
               <a href="#" class="button">
                 View all
               </a>
@@ -273,7 +275,7 @@
               class="
               testimonials__item
               grid__item
-              grid__item--1-4"
+              grid__item--desktop-1-4"
             >
               <div class="testimonial">
                 <div class="testimonial__photo-container">
@@ -301,7 +303,7 @@
               class="
               testimonials__item
               grid__item
-              grid__item--5-8"
+              grid__item--desktop-5-8"
             >
               <div class="testimonial">
                 <div class="testimonial__photo-container">
@@ -329,7 +331,7 @@
               class="
               testimonials__item
               grid__item
-              grid__item--9-12"
+              grid__item--desktop-9-12"
             >
               <div class="testimonial">
                 <div class="testimonial__photo-container">
@@ -356,11 +358,91 @@
         </div>
       </section>
 
-      <section class="page__section" id="contacts">
+      <section class="page__section contact-us" id="contacts">
         <div class="container">
           <h2 class="page__section-title">
             Contact us
           </h2>
+
+          <div class="grid grid--desktop">
+            <div class="grid__item grid__item--desktop-1-2">
+              <div class="contact-us__info">
+                <div class="contact-us__info-title">
+                  Phone
+                </div>
+
+                <a
+                  href="tel:+1 234 5555-55-55"
+                  class="contact-us__info-link"
+                >
+                  +1 234 5555-55-55
+                </a>
+              </div>
+
+              <div class="contact-us__info">
+                <div class="contact-us__info-title">
+                  Email
+                </div>
+
+                <a
+                  href="mailto:hello@miami.com"
+                  class="contact-us__info-link"
+                >
+                  hello@miami.com
+                </a>
+              </div>
+            </div>
+            <div class="grid__item grid__item--desktop-4-5">
+              <div class="
+                contact-us__info
+                contact-us__info--last"
+              >
+                <div class="contact-us__info-title">
+                  Address
+                </div>
+
+                <a
+                  href="https://goo.gl/maps/moWwKJSQS3Kdah4k8"
+                  class="contact-us__info-link"
+                >
+                  400 first ave. n.
+                  <br>
+                  suite 700
+                  <br>
+                  Minneapolis, MN 55401
+                </a>
+              </div>
+            </div>
+            <div class="grid__item grid__item--desktop-8-12">
+              <form action="#">
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="Name"
+                  class="contact-us__field form-field"
+                >
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  class="contact-us__field form-field"
+                >
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  class="
+                    contact-us__field
+                    contact-us__field--last
+                    form-field
+                    form-field--textarea"
+                ></textarea>
+
+                <button class="button button--primary">
+                  Consultation
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>

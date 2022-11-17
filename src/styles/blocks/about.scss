@@ -1,4 +1,14 @@
 .about {
+
+  &__content {
+
+    @include onDesktop {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 24px;
+    }
+  }
+
   &__title {
     margin: 0 0 48px;
     font-weight: 700;
@@ -8,9 +18,15 @@
     color: #000;
 
     @include onDesktop {
-      margin-bottom: 0;
+      grid-column: 1 / 5;
       font-size: 48px;
       line-height: 48px;
+    }
+  }
+
+  &__description {
+    @include onDesktop {
+      grid-column: 7 / 13;
     }
   }
 
